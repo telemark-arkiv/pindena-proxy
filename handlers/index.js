@@ -5,21 +5,6 @@ var config = require('../config')
 var sendMail = require('../lib/sendMail')
 var wreckOptions = {}
 
-function getFrontpage (request, reply) {
-  reply('Nothing to see here. Go home.')
-}
-
-function getForm (request, reply) {
-  var formID = request.params.formID
-  Wreck.get(config.PINDENA_URL + '/' + formID, wreckOptions, function (error, res, payload) {
-    if (error) {
-      reply(error)
-    } else {
-      reply(payload.toString())
-    }
-  })
-}
-
 function postForm (request, reply) {
   var formID = request.params.formID
   var payloadToSend = request.payload
@@ -37,7 +22,7 @@ function postForm (request, reply) {
     if (error) {
       reply(error)
     } else {
-      Wreck.post(postUrl, {payload:request.toString()}, function (error, res, payload) {
+      Wreck.post(postUrl, wreckOptions, function (error, res, payload) {
         if (error) {
           reply(error)
         } else {
@@ -46,11 +31,6 @@ function postForm (request, reply) {
       })
     }
   })
-
 }
-
-module.exports.getFrontpage = getFrontpage
-
-module.exports.getForm = getForm
 
 module.exports.postForm = postForm

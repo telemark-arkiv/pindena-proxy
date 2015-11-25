@@ -6,7 +6,7 @@ var config = {
   PINDENA_HOST: process.env.PINDENA_HOST || 'telemark.pameldingssystem.no',
   PINDENA_PROTOCOL: process.env.PINDENA_PROTOCOL || 'https',
   PINDENA_PORT: process.env.PINDENA_PORT || 443,
-  API_KEY: process.env.API_KEY || 'yourSendGridAPIKey',
+  API_KEY: process.env.API_KEY || 'yourSendGridAPI',
   MAIL_TO: process.env.MAIL_TO || 'mailTo@example.com'
 }
 
