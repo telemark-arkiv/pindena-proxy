@@ -2,6 +2,7 @@
 
 var Wreck = require('wreck')
 var config = require('../config')
+var sendMail = require('../lib/sendMail')
 var wreckOptions = {}
 
 function getFrontpage (request, reply) {
@@ -25,6 +26,9 @@ function postForm (request, reply) {
   var data = payload.data
   // var mailFrom = payload.data.registrationpersonstruct[0].Email
 
+  var options = {
+
+  }
 
 
 
