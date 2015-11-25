@@ -1,0 +1,48 @@
+{
+  "name": "pindena-proxy",
+  "version": "1.0.0",
+  "description": "Fikser trøbbel med pindena",
+  "license": "MIT",
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "bugs": {
+    "url": "https://github.com/telemark/pindena-proxy/issues"
+  },
+  "homepage": "https://github.com/telemark/pindena-proxy",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.2.0"
+  },
+  "scripts": {
+    "test": "standard && tap --reporter=spec test/*.js",
+    "coverage": "tap test/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
+    "start": "node standalone.js",
+    "setup": "npm install && node setup.js"
+  },
+  "standard": {
+    "ignore": [
+      "public"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/telemark/pindena-proxy.git"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.4",
+    "standard": "^5.3.1",
+    "tap": "^2.1.1"
+  },
+  "dependencies": {
+    "hapi": "^11.0.2",
+    "hoek": "^2.16.3",
+    "inert": "^3.2.0",
+    "path": "^0.12.7",
+    "vision": "^3.0.0",
+    "wreck": "^6.3.0"
+  }
+}
