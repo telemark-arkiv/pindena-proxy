@@ -21,18 +21,32 @@ function getForm (request, reply) {
 }
 
 function postForm (request, reply) {
-  // var formID = request.params.formID
-  var payload = request.payload
-  var data = payload.data
-  // var mailFrom = payload.data.registrationpersonstruct[0].Email
+  var formID = request.params.formID
+  var payloadToSend = request.payload
+  var data = payloadToSend.data
+  var mailFrom = payloadToSend.data.registrationpersonstruct[0].Email
+  var postUrl = config.PINDENA_URL + '/' + formID
 
-  var options = {
+  sendMail({
+    apiKey: config.API_KEY,
+    to: config.MAIL_TO,
+    from: mailFrom,
+    subject: 'I win!!!!!',
+    message: JSON.stringify(data, null, 2)
+  }, function (error, msg) {
+    if (error) {
+      reply(error)
+    } else {
+      Wreck.post(postUrl, {payload:request.toString()}, function (error, res, payload) {
+        if (error) {
+          reply(error)
+        } else {
+          reply(payload.toString())
+        }
+      })
+    }
+  })
 
-  }
-
-
-
-  reply(JSON.stringify(data, null, 2))
 }
 
 module.exports.getFrontpage = getFrontpage
