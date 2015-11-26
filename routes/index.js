@@ -1,7 +1,6 @@
 'use strict'
 
-var formidable = require('formidable')
-var sendMail = require('../lib/sendMail')
+var parseAndSend = require('../lib/parseAndSend')
 var config = require('../config')
 
 var routes = [
@@ -27,25 +26,12 @@ var routes = [
           var formID = request.params.formID
           var postUrl = config.PINDENA_URL + '/' + formID
           var mainCallback = callback(null, postUrl)
-          var form = new formidable.IncomingForm()
-          form.parse(request.payload, function (err, fields, files) {
-            if (err) {
-              console.error(err)
+          parseAndSend(request, function (error, msg) {
+            if (error) {
+              console.error(error)
             } else {
-              var mailFrom = fields['data[registrationpersonstruct][1][Email]']
-              sendMail({
-                apiKey: config.API_KEY,
-                to: config.MAIL_TO,
-                from: mailFrom,
-                subject: formID,
-                message: JSON.stringify(fields, null, 2)
-              }, function (error, msg) {
-                if (error) {
-                  console.log(error)
-                } else {
-                  mainCallback
-                }
-              })
+              console.log(msg)
+              mainCallback
             }
           })
         },
