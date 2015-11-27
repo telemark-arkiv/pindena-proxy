@@ -1,7 +1,7 @@
 {
   "name": "pindena-proxy",
-  "version": "1.0.0",
-  "description": "Fikser trøbbel med pindena",
+  "version": "1.0.1",
+  "description": "Intercepts registrations from Pindena",
   "license": "MIT",
   "author": {
     "name": "Geir Gåsodden",

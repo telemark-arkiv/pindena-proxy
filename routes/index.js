@@ -6,6 +6,13 @@ var config = require('../config')
 var routes = [
   {
     method: 'GET',
+    path: '/',
+    handler: function (request, reply) {
+      reply('Nothing to se here! Go home.')
+    }
+  },
+  {
+    method: 'GET',
     path: '/{params*}',
     handler: {
       proxy: {
