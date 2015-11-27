@@ -27,7 +27,7 @@ ENV PINDENA_URL https://telemark.pameldingssystem.no
 ENV PINDENA_HOST: telemark.pameldingssystem.no
 ENV PINDENA_PROTOCOL https
 ENV PINDENA_PORT 443
-ENV yourSendGridAPIKey
+ENV API_KEY yourSendGridAPIKey
 ENV MAIL_TO mailTo@example.com
 
 # Expose 8000
