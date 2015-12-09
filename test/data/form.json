@@ -3,7 +3,6 @@
   "internettRegistration": "1",
   "UrlAlias": "",
   "data[registrationpersonstruct][1][RegistrationID]": "346",
-  "data[registrationpersonstruct][1][RegisterParentID]": "",
   "data[registrationpersonstruct][1][CompanyName]": "Test 1",
   "data[registrationpersonstruct][1][Option7]": "00000000",
   "data[registrationpersonstruct][1][Address]": "Test 1",

@@ -1,0 +1,15 @@
+RegistrationID: 346
+CompanyName: Test 1
+Option7: 00000000
+Address: Test 1
+ZipCode: 3702
+PostPlace: Skien
+Option10: Ja
+Option2: Test 1
+Option6: Lene Sjølie
+Phone: 99422550
+Email: lene.sjolie@t-fk.no
+LastName: Test 1
+Option4: Hei! Kommer denne frem til arkiv? Videresend gjerne eposten til meg så jeg får se hvordan den blir og så får vi snakkes til uka om dette kan fungere/se på behov for justeringer :) mvh Lene
+Option9: Test 1
+Comment: Test 1
