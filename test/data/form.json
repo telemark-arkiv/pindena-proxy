@@ -1,0 +1,22 @@
+{
+  "RegistrationID": "346",
+  "internettRegistration": "1",
+  "UrlAlias": "",
+  "data[registrationpersonstruct][1][RegistrationID]": "346",
+  "data[registrationpersonstruct][1][RegisterParentID]": "",
+  "data[registrationpersonstruct][1][CompanyName]": "Test 1",
+  "data[registrationpersonstruct][1][Option7]": "00000000",
+  "data[registrationpersonstruct][1][Address]": "Test 1",
+  "data[registrationpersonstruct][1][ZipCode]": "3702",
+  "data[registrationpersonstruct][1][PostPlace]": "Skien",
+  "data[registrationpersonstruct][1][Option10]": "Ja",
+  "data[registrationpersonstruct][1][Option2]": "Test 1",
+  "data[registrationpersonstruct][1][Option6]": "Lene Sjølie",
+  "data[registrationpersonstruct][1][Phone]": "99422550",
+  "data[registrationpersonstruct][1][Email]": "lene.sjolie@t-fk.no",
+  "data[registrationpersonstruct][1][LastName]": "Test 1",
+  "data[registrationpersonstruct][1][Option4]": "Hei! Kommer denne frem til arkiv? Videresend gjerne eposten til meg så jeg får se hvordan den blir og så får vi snakkes til uka om dette kan fungere/se på behov for justeringer :) mvh Lene",
+  "data[registrationpersonstruct][1][Option9]": "Test 1",
+  "data[registrationpersonstruct][1][Comment]": "Test 1",
+  "action_registration_personnew": "Send søknad"
+}
