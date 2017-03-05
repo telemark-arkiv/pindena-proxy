@@ -33,7 +33,7 @@
     "url": "git://github.com/telemark/pindena-proxy.git"
   },
   "devDependencies": {
-    "coveralls": "^2.11.4",
+    "coveralls": "^2.12.0",
     "standard": "^8.6.0",
     "tap": "^10.0.2"
   },
